@@ -1,7 +1,5 @@
 #include "LiStack.h"
 
-#define MAXSIZE 10
-
 /*
 栈空条件：s->next=NULL
 栈满条件：不考虑
@@ -62,23 +60,25 @@ Status pop(LiStack *S, ElemType *e)
 Status getTop(LiStack *S, ElemType *e)
 { // 在栈不为空的条件下，将头节点后继数据节点的数据域赋给e
     LiNode *p = (*S)->next;
-    if(p!=NULL){
-        *e=p->data;
+    if (p != NULL)
+    {
+        *e = p->data;
         return TRUE;
     }
     return FALSE;
 }
 
-int main(){
+int main()
+{
     LiStack s;
     ElemType e;
     initStack(&s);
-    push(&s,1);
-    push(&s,2);
-    getTop(&s,&e);
-    printf("%d\n",e);
-    
-    pop(&s,&e);
-    getTop(&s,&e);
-    printf("%d",e);
+    push(&s, 1);
+    push(&s, 2);
+    getTop(&s, &e);
+    printf("%d\n", e);
+
+    pop(&s, &e);
+    getTop(&s, &e);
+    printf("%d", e);
 }

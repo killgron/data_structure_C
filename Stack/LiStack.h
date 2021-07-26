@@ -3,7 +3,6 @@
 typedef int ElemType;
 
 #define MAXSIZE 10
-#define I
 
 typedef struct linkNode
 {

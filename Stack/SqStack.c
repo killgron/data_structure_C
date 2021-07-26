@@ -1,5 +1,12 @@
 #include "SqStack.h"
 
+/*
+栈空条件：top=-1
+栈满条件：top=MaxSize-1
+进栈e操作：top++; 将e放在top处
+退栈操作：从top处取出元素e; top--;
+*/
+
 void initStack(SqStack *S)
 {
     // S =(SqStack*)malloc(sizeof(SqStack));
