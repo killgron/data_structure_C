@@ -14,7 +14,7 @@ void initStack(SqStack *S)
 }
 void destoryStack(SqStack *S)
 {
-    free(S);
+    S->top = -1;
 }
 Bool isEmpty(SqStack S)
 {
