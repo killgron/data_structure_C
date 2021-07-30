@@ -1,6 +1,13 @@
 #include "define.h"
 
+#define _FUNC_
+
+#ifdef _FUNC_
+typedef char ElemType;
+#else
 typedef int ElemType;
+#endif
+
 
 #define MAXSIZE 10
 
